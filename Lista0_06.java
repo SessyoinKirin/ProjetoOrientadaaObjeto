@@ -17,22 +17,19 @@ public class Lista0_06 {
 			for(int j=0; j<a[i].length; j++){
 				a[i][j] = (int)(Math.random()*100);
 				System.out.print(a[i][j]+"  ");
-				if(valor == a[i][j]){
-					ocorrencia++;
-					}
 				}
 				System.out.println("\n\n");
 			}
-			
 		for(int i=0; i<a.length; i++){
 			for(int j=0; j<a[i].length; j++){
-				a[i][j] = (int)(Math.random()*100);
-				if(valor == a[i][j]){
-					System.out.println("O valor "+valor+" apareceu na linha"+i+" e coluna "+j);
+				if(a[i][j] == valor){
+					ocorrencia++;
+					System.out.println("O valor "+valor+" apareceu na linha "+i+" e coluna "+j);
 					}
 				}
-				
-			}System.out.println("Foi total de "+ocorrencia+" vezes");
+			}	
+			
+		System.out.println("Foi total de "+ocorrencia+" vezes");
 		
 	}
 }
